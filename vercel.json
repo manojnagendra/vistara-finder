@@ -16,6 +16,10 @@
     {
       "src": "styles.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "google5b166f55bab215a7.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
