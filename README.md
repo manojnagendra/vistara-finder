@@ -15,16 +15,6 @@ VistaraFinder is a mobile-first web application designed for travelers who prefe
 *   **Live Flight Tracking Integration:** Direct tracking link to **Flightradar24** (`https://www.flightradar24.com/data/aircraft/{registration}`) embedded right in the flight card drawer.
 *   **Smart Fallbacks:** Gracefully falls back to route-based scheduling guides if live tail lookup fails.
 
----
-
-## 🛠️ Tech Stack & Architecture
-
-*   **Frontend:** Vanilla HTML5, CSS3 (glassmorphic styling, custom animations), and ES6+ JavaScript.
-*   **Backend Serverless API:** Python `BaseHTTPRequestHandler` deployed as a serverless function on **Vercel** (`api/search.py`).
-*   **Concurrency:** Utilizes `ThreadPoolExecutor` to fetch and verify multiple flight registrations concurrently, rendering search results in under **0.4 seconds**.
-*   **Caching Layer:** Thread-safe, in-memory caching (`TAIL_CACHE`) with a **3-hour TTL** to optimize API request limits.
-
----
 
 ## 🚀 Getting Started & Local Development
 
@@ -69,13 +59,3 @@ VistaraFinder is a mobile-first web application designed for travelers who prefe
 └── .vercelignore        # Exclusion configuration for serverless deployment
 ```
 
----
-
-## 📈 SEO & Search Optimization
-
-This repository is optimized for the following search queries:
-*   *How to identify ex-Vistara flights on Air India*
-*   *Air India ex-Vistara routes and tail numbers*
-*   *Vistara Airbus A321neo lie-flat business class seats*
-*   *Track Vistara aircraft registration after merger*
-*   *Vistara three-class narrowbody seating layouts*
