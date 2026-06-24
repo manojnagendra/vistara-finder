@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html dir="LTR" lang="en" class="responsive-full"  prefix="og: http://ogp.me/ns#">
+ <!--
+Looking at the source?  Great!
+  FlightAware is looking for UI/UX, web, and backend developers, mathematicians and electrical engineers.
+
+Get in touch with us:
+https://www.flightaware.com/about/careers
+
+-->
+ <head>
+	  
+      <!-- 	Attention! You must agree with FlightAware's Terms of Use at http://flightaware.com/about/termsofuse
+  Data robots and collection agents should use http://flightaware.com/commercial/flightxml/
+            Copyright 2026 FlightAware.  All Rights Reserved. -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="twitter:site" content="@FlightAware" />
+      <meta name="facebook-domain-verification" content="ijk4kalzz9je9chk38y60825grrr8m" />
+      <title>AI2414 (AIC2414) Air India Flight Tracking and History - FlightAware</title>
+<!-- OneTrust Cookies Consent Notice start for flightaware.com -->
+			<script type="text/javascript" src="https://cdn.cookielaw.org/consent/1e071528-f870-4d75-8811-974a2ff4e73b/OtAutoBlock.js" ></script>
+			<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="1e071528-f870-4d75-8811-974a2ff4e73b" ></script>
+			<script type="text/javascript">
+			window.OneTrustStatus = {
+				promise: null,
+				resolver: () => {},
+				readyCheck: function() {
+					if (this.promise) {
+						return this.promise;
+					}
+
+					if (window.OneTrust || window.Optanon) {
+						return Promise.resolve(true);
+					}
+
+					this.promise = new Promise((resolve) => {
+						this.resolver = resolve;
+					});
+
+					return this.promise;
+				}
+			};
+
+			function OptanonWrapper() {
+				// Resolve promise once OneTrust exists
+				window.OneTrustStatus.resolver(true);
+			}
+			</script>
+			<!-- OneTrust Cookies Consent Notice end for flightaware.com -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.flightaware.com/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.flightaware.com/images/favicon-16x16.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.flightaware.com/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.flightaware.com/images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.flightaware.com/images/apple-touch-icon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="240x240" href="https://www.flightaware.com/images/apple-touch-icon-240x240.png" />
+
+
+  <link rel="alternate" href="https://ar.flightaware.com/live/flight/AIC2414" hreflang="ar-sa" />
+  <link rel="alternate" href="https://de.flightaware.com/live/flight/AIC2414" hreflang="de-de" />
+  <link rel="alternate" href="https://uk.flightaware.com/live/flight/AIC2414" hreflang="en-gb" />
+  <link rel="alternate" href="https://flightaware.com/live/flight/AIC2414" hreflang="en-us" />
+  <link rel="alternate" href="https://es.flightaware.com/live/flight/AIC2414" hreflang="es-es" />
+  <link rel="alternate" href="https://fr.flightaware.com/live/flight/AIC2414" hreflang="fr-fr" />
+  <link rel="alternate" href="https://he.flightaware.com/live/flight/AIC2414" hreflang="he-il" />
+  <link rel="alternate" href="https://hi.flightaware.com/live/flight/AIC2414" hreflang="hi-in" />
+  <link rel="alternate" href="https://it.flightaware.com/live/flight/AIC2414" hreflang="it-it" />
+  <link rel="alternate" href="https://ja.flightaware.com/live/flight/AIC2414" hreflang="ja-jp" />
+  <link rel="alternate" href="https://ko.flightaware.com/live/flight/AIC2414" hreflang="ko-kr" />
+  <link rel="alternate" href="https://pt.flightaware.com/live/flight/AIC2414" hreflang="pt-br" />
+  <link rel="alternate" href="https://ru.flightaware.com/live/flight/AIC2414" hreflang="ru-ru" />
+  <link rel="alternate" href="https://tr.flightaware.com/live/flight/AIC2414" hreflang="tr-tr" />
+  <link rel="alternate" href="https://zh.flightaware.com/live/flight/AIC2414" hreflang="zh-cn" />
+  <link rel="alternate" href="https://zh-tw.flightaware.com/live/flight/AIC2414" hreflang="zh-tw" />
+<!-- non scripts -->
+  <link rel="stylesheet" type="text/css"  href="https://www.flightaware.com/include/8f9cd9bd2d35-flightpage/flightpage.css" />
+  <link rel="stylesheet" type="text/css"  href="https://www.flightaware.com/include/e5c0ebb2bfa71-foundation/foundation.css" />
+  <link rel="stylesheet" type="text/css"  href="https://www.flightaware.com/include/036e68e9199f-flightaware.css" />
+  <link rel="stylesheet" type="text/css"  href="https://www.flightaware.com/include/c078208f272c-transpiled/live/shareflight/app.css" />
+  	<script>
+										if(typeof window.performance === 'object' && typeof window.performance.navigation === 'object' && window.performance.navigation.type == 2) {
+											location.reload();
+										}
+									</script>
+  
+		<script>
+			var url = new URL(window.location);
+			// I know delete will always succeed, but it also can
+			// break our query params by encoding in an unexpected
+			// way. We limit the impact of this by only rewriting
+			// if _login is actually present.
+			if (url.searchParams.has("_login")) {
+				url.searchParams.delete("_login");
+			}
+			window.history.replaceState({}, document.title, url.pathname + url.search);
+		</script>
+	
+<!--[if lt IE 9]>
+			<script>
+			document.createElement('header');
+			document.createElement('nav');
+			document.createElement('section');
+			document.createElement('article');
+			document.createElement('aside');
+			document.createElement('footer');
+			document.createElement('hgroup');
+			</script>
+			<![endif]-->
+<!-- scripts -->
+
+<script type="text/javascript">user = {"username":"","TZ":":America/New_York","accounttype":"0","email":"","id":"","locale":"en_US","lang":"en","name":" ","active":"","arincUser":false,"fboUser":false,"suaCustomer":false,"distance_units":"sm","airportCode":"","altitudeDisplay":"feet","speedDisplay":"miles","fuelBurnDisplay":"gallons","flightpageLayout":"0","comma":",","decimal":".","adhocEnabled":false,"region":"north_america","adblock_page_load_threshold":3,"token":"097414296"};</script>
+
+
+<script type="text/javascript">var FAIntegrationConfig = {"enabled":false,"idents":[]};</script>
+
+
+<script type="text/javascript">var airportNamesUrl = 'https://www.flightaware.com/ajax/ignoreall/airport_names_yajl.rvt', airportValidateUrl = 'https://www.flightaware.com/ajax/validate_airport.rvt';</script>
+
+  <script>	var FAConfig = typeof(FA) === 'object' ? FA.faConfig : { };	FAConfig.snap_analytics_enabled = 0;	FAConfig.wxreplay_playback_delay = 5000;	FAConfig.processing_delay = 15000;</script>
+  <script>var rosettaBootstrap = {"FP_PoweredOn_Ago":"Powered on %1 ago","FP_EstimatedArrivalTime":"estimated arrival time","FP_Soon":"soon","FP_Departing_Soon":"Departing soon","FP_Ident_Status_Alerts":"Status Alerts","FP_Remaining":"Remaining","FP_Link_All_Flights":"all flights","FP_Tour_The_Page":"Tour the page","FP_Elapsed":"Elapsed","FP_UpgradeCallsign":"Upgrade to see ATC callsign","FP_X_TotalTravelTime":"%1 total travel time","FP_Header_Live_Flight_Tracker":"Live Flight Tracker","FP_Details":"Details","FP_Notification_Added_Successfully_You":"Success! you will receive status updates for this flight.","FP_No_FBO":"No FBO found at destination","FP_Notify_FBO":"Notify FBO","FP_Owner":"Owner","FP_Status_Updates_Not_Available":"Status updates are not available for historical flights","FP_Remark_Add":"Add New Remark","FP_Upcoming_Flights":"Upcoming flights","FP_Date":"Date","FP_Operator":"Operator","FP_Arrival":"Arrival","FP_Decode":"decode","FP_Aircraft":"Aircraft","FP_Aviator_View_Explain":"Aviator view shows general aviation flights with runway times in the progress bar and a condensed page layout. Enable this setting to view all flights this way.","FP_Explain_Enter_Flight_Info":"Enter a flight (tail number, identifier, or airline name & number) into the search box above for live flight tracking.","FP_Took_Off_From":"took off from","FP_Flight":"Flight","FP_Average_Fare":"Average Fare","FP_Takes_Off_From":"takes off from","FP_Cabin":"Cabin","FP_Additional_Links":"Additional Links","FP_Landed_At":"landed at","FP_Landing_At":"landing at","FP_Few_Seconds":"a few seconds","FP_Remark_Added_Successfully":"Remark added successfully.","FP_Not_Your_Flight":"Not your flight?","FP_Tour_Step_2":"Progress bar shows gate-to-gate departures and arrivals (when available)","FP_Login":"Login","FP_Manager":"Manager","FP_Tour_Step_1":"We redesigned our Flight Page. Check out the updated features!","FP_X_Flown":"%1 flown","FP_X_To_Go":"%1 to go","FP_Tour_Step_3":"Progress bar shows take-off and landing times","FP_Filed":"Filed","FP_Direct":"Direct","FP_Activity_Log":"Activity Log","FP_Fuel_Burn":"Fuel Burn","FP_First_Seen_At":"First seen at %1","FP_Tour_Step_6":"View all flights in Aviator mode","FP_Last_Seen_At":"Last seen at %1","FP_Status_Updates":"Status Updates","FP_Duration":"Duration","FP_Enroute_Flight":"En Route flight","FP_Past_Flights":"Past flights","FP_View_More_Flight_History":"View more flight history","FP_Report_Inaccuracies":"Report inaccuracies on this page","FP_Aircraft_Type":"Aircraft Type","FP_Photos":"Photos","FP_View_All_Photos":"view all photos","FP_Scheduled":"Scheduled","FP_Taxiing":"Taxiing","FP_Estimated":"Estimated","FP_Tail_Number":"Tail Number","FP_Registration":"Registration","FP_Remarks":"Remarks","FP_Edit":"edit","FP_Message_Sent_Successfully":"Message sent successfully.","FP_Duration_Hours_Minutes":"%1 hours %2 minutes","FP_A_Week":"a week","FP_Seconds":"seconds","FP_Result_Unknown":"Result unknown","FP_Just_Landed":"Just landed","FP_40m_1hr":"40 minutes - 1 hour","FP_Cancelled":"Cancelled","FP_Taxiing_Take_Off":"Taxiing for takeoff","FP_Left_Gate":"Left gate","FP_Left_Terminal":"Left terminal","FP_Upload_Photo":"upload photo","FP_A_Year":"a year","FP_Upgrade_To_See_Tail":"Upgrade account to see tail number","FP_AboutYearAgo":"about a year","FP_Duration_Hour":"%1 hour","FP_Just_Arrived":"Just arrived","FP_20m_40m":"20-40 minutes","FP_Fuel Burn":"Fuel Burn","FP_MoreThanHour":"More than 1 hour","FP_10m_20m":"10-20 minutes","FP_10m":"Less than 10 minutes","FP_Duration_Hours":"%1 hours","FP_LearnMore":"learn more","FP_AboutWeekAgo":"about a week","FP_Duration_Hour_Minute":"1 hour 1 minute","FP_Join_FlightAware":"Join FlightAware","FP_Settings":"Settings","FP_Airport":"Airport","FP_Units":"Units","FP_Airport_Codes":"Airport Codes","FP_Example":"Example","FP_Always_Show_ICAO":"Always show 4-letter code","FP_Always_Show_ICAO_First":"Always list 4-letter code first","FP_Imperial":"Imperial","FP_Metric":"Metric","FP_Aviation":"Aviation","FP_Speed":"Speed","FP_MPH":"MPH","FP_KMH":"km/h","FP_KTS":"kts","FP_Distance":"Distance","FP_MI":"mi","FP_KM":"km","FP_NM":"nm","FP_Altitude":"Altitude","FP_FT":"ft","FP_M":"m","FP_GAL_LBS":"gal / lbs","FP_L_KG":"l / kg","FP_Already_Member":"Already a member of FlightAware?","FP_Landing_Shortly":"Landing shortly","FP_Notify_Advanced":"Advanced options","FP_A_Day":"a day","FP_Duration_Hours_Minute":"%1 hours 1 minute","FP_Duration_Hour_Minutes":"1 hour %1 minutes","FP_X_Remaining":"%1 remaining","FP_Estimated_Arrival":"Estimated arrival","FP_Duration_More_Than":"More than 48 hours","FP_Arriving_Shortly":"Arriving shortly","FP_Notify_Friend_Explain":"Your friend will receive a notification when a flight plan is filed, when the flight departs, arrives, and if the flight is delayed, cancelled, or diverted.","FP_Diverted":"Diverted","FP_Duration_More_Than_Short":">48h","FP_Duration_Hours_Minutes_Short":"%1h %2m","FP_Notify_Status_Updates":"Notify me of all status updates","FP_Notify_Me_Explain":"You will receive a notification when a flight plan is filed, when the flight departs, arrives, and if the flight is delayed, cancelled, or diverted.","FP_OR":"or","FP_Notify_Friend_Status_Updates":"Notify a friend of all status updates","FP_Edit_Status_Updates":"Edit status update settings","FP_Duration_Hours_Short":"%1h","FP_Early":"%1 early","FP_Duration_Minutes_Short":"%1m","FP_Taxiing_Gate":"Taxiing to gate %1","FP_Remove_MyFlightAware":"Remove %1 from My FA","FP_Enroute":"En route","FP_Configure_User_Prefs":"Configure user preferences","FP_Taxiing_Terminal":"Taxiing to terminal %1","FP_Amenities":"amenities","FP_Seat_Map":"seat map","FP_Standby_List":"standby list","FP_Upgrade_List":"upgrade list","FP_Configure_Unit_Prefs":"Configure unit preferences","FP_Enroute_And_On_Time":"En route and on time","FP_Departing_From":"departing from %1","FP_Link_All_Flights_Between":"All flights between %1 and %2","FP_Purchase_Flight_History":"Purchase entire flight history for %1","FP_Updated_Ago":"updated %1 ago","FP_Tour_Step_5":"Configure user preferences and unit settings","FP_Near_City":"near %1","FP_AboutHour":"about %1 hours","FP_Ident_Status_Updates":"%1 Status Updates","FP_Notification_Added_Successfully":"Success! %1 will receive status updates for this flight.","FP_Experiencing_Delays":"%1 is experiencing delays","FP_Arrived_At":"arrived at %1","FP_On_Time":"on time","FP_Gate":"Gate %1","FP_Terminal":"Terminal %1","FP_Left":"left %1","FP_Few_Seconds_Ago":"a few seconds ago","FP_Years":"%1 years","FP_Tentatively_Landed":"Tentatively Landed","FP_Landed_Ago":"Landed %1 ago","FP_Weeks":"%1 weeks","FP_Days":"%1 days","FP_Late":"%1 late","FP_Planned":"Planned","FP_Operated_By":"Operating as %1","FP_Get_Notifications":"Get Notifications","FP_Adhoc_Notice":"Tracking data for this position-only flight is incomplete and potentially inaccurate.","FP_Message_Aircraft":"Message the Aircraft","FP_Close":"Close","FP_Login_Save_Changes":"to change and save your settings.","FP_Link_Flight_Schedule":"%1 flight schedule","FP_X_Elapsed":"%1 elapsed","FP_Enable_Aviator_View":"Always show aviator view","FP_X_TotalFlightTime":"%1 total flight time","FP_AD_Message_Max_Length":"Warning: You have exceeded the number of allowed characters in the message.","FP_AD_Message_Error":"Please correct the errors in your message before attempting to send it.","FP_Link_Flight_Log_Graph":"View track log","FP_v2_Status_Over_Hours":"over %1 hours","FP_v2_Status_Over_Day":"over a day","FP_v2_Status_Over_Days":"over %1 days","FP_v2_Status_Over_Week":"over a week","FP_v2_Status_Over_Weeks":"over %1 weeks","FP_v2_Status_Over_Month":"over a month","FP_v2_Status_Over_Months":"over %1 months","FP_v2_Status_Over_Year":"over a year","FP_v2_Status_Over_Years":"over %1 years","FP_Add_MyFlightAware":"Add %1 to My FA","FP_Global_Coverage":"Want 100% Global Coverage?","FP_Arriving_At":"arriving at %1","FP_Expected_Depart":"Expected to depart in %1","FP_LimitAndUpgrade_MyFlightAware":"You have reached the limit of aircraft that you can add to My FlightAware. <a href=\"/commercial/premium/\">Upgrade to a premium account</a> to add this aircraft to My FlightAware.","FP_Edit_Notifications":"Edit Notifications","FP_Hidden_Flights_Summary":"There are flights hidden from view because they were not matched with a flight plan.","FP_Hidden_Flights_View":"View all hidden position-only flights","FP_Hidden_Flights_Act_Account":"%1Activate%2 your account to show position-only flights.","FP_Hidden_Flights_Login":"Login or create an account to view hidden flights","FP_Map_Replay_Replay":"Replay","FP_Map_Replay_Speed":"Speed","FP_AD_Message_Illegal_Chars":"Warning: Your message contains characters that are not permitted and as such, will be omitted from the final message.","FP_AD_Message_TTL":"Please enter a valid number of hours to retry this message for.","FP_Add_Aireon":"Add Aireon Space-Based ADS-B","FP_Tentatively_Arrived":"Tentatively Arrived","FP_Link_View_Upcoming_Flights":"View all %1 upcoming flights","FP_Takeoff":"Takeoff","FP_Map_Replay_Loop_Off":"Loop Off","FP_Map_Replay_Loop_On":"Loop On","FP_Map_Replay_Loop":"Loop","FP_Filed_Altitude":"Filed Altitude","FP_Filed_Speed":"Filed Speed","FP_Past_Flight":"Past Flight","FP_Taxi_Time":"Taxi Time","FP_NoFlightsLast14Days":"No flights in the last 14 days","FP_Arrived_Ago":"Arrived %1 ago","FP_Top_Photos":"Top %1 Photos","FP_Settings_NotRegistered":"Basic users can change the default flight data and airport code settings displayed on this page. Registering is free and easy!","FP_RegisteredUsers4Months":"Basic users (becoming a basic user is free and easy!) view 3 months history.","FP_Heading":"Heading","FP_UpgradeTailAndCallsign":"Upgrade to see tail number and ATC callsign","FP_Show":"Show","FP_Remove_FBO":"Remove FBO","FP_Duration_Minute":"%1 minute","FP_Flight_Times":"Flight Times","FP_Select_FBO_Description":"Email this FBO of the arrival of %1 and provide access to track this leg of the flight.","FP_Gate_Departures":"Gate Departure","FP_Landing":"Landing","FP_Arrival_Times":"Arrival Times","FP_Departure_Times":"Departure Times","FP_Landing_In":"Landing in %1","FP_Gate_Arrival":"Gate Arrival","FP_Flight_Details":"Flight Details","FP_Duration_Minutes":"%1 minutes","FP_Arriving_In":"Arriving in %1","FP_Average_Delay":"Average Delay","FP_Route":"Route","FP_Select_FBO":"Select destination FBO","FP_Actual":"Actual","FP_First_Seen_Near":"first seen near","FP_Last_Seen_Near":"last seen near","FP_Runway_Information":"Runway Information","FP_Current_Flights":"Current Flights","FP_Weather_Conditions":"Weather Conditions","FP_Departing_Runways":"Departing Runways","FP_Departing_Runway_Singular":"Departing Runway","FP_Landing_Runways":"Landing Runways","FP_Landing_Runway_Singular":"Landing Runway","FP_Schedule_Visualizer_Title":"Schedule Visualizer","FP_Schedule_Visualizer_Def":"The schedule visualizer gives operators an overview of the day and highlights schedule conflicts that will need to be addressed.","FP_Resolve_Problem":"Resolve problem flights by updating the departure time in the Current Flights log or by clicking the error icon in the visualizer.","FP_Link_graph":"graph","FP_Status_Active":"Active","FP_Forecast":"Forecast","FP_View_More_Weather":"View more weather info","FP_Column_Date":"Date","FP_Taxi_Out":"Taxi Out","FP_Taxi_In":"Taxi In","FP_View":"View","FP_weather_clouds":"Clouds","FP_METAR_Visibility":"Visibility","FP_METAR_Wind":"Wind","FP_Density_Altitude":"Density Altitude","FP_METAR_Temperature":"Temperature","FP_METAR_FlightRules":"Flight Rules","FP_Status_Taxiing":"Taxiing","FP_Status_En_Route":"En Route","FP_Community_PhotoTag_parked":"Parked","FP_Status_Quick_Turn":"Quick Turn","FP_Arrived_At_FBO":"Arrived at %1 - %2 ago","FP_Departing_Soon_Question":"Departing Soon?","FP_Add_Upcoming_Flight":"Add Upcoming Flight","FP_Map_Replay_Toggle_On":"On","FP_Track_Inbound_Plane":"Track inbound plane","FP_Map_Replay_Mode":"Replay Mode","FP_Airline":"Airline","FP_Surface_Map_Title":"Live Surface Map","FP_Surface_Dialog_Close":"This dialogue will close in 60 seconds or you can click the exit icon in the top right corner to go back to the flight map immediately.","FP_Surface_Survey_Description":"We appreciate you trying our new <strong>Live Surface Map</strong> feature. If you have a couple of minutes, we'd like to collect your feedback on it.","FP_Give_Feedback":"Give Feedback","FP_Map_Replay_Play":"Play","FP_Map_Replay_Pause":"Pause","FP_Map_Replay_Toggle_Off":"Off","FP_True_Airspeed":"True Airspeed","FPAS":"Flight Intent","FP_Upsell_Unlock_Airmet_Sigmet":"Unlock AIRMETs and SIGMETs weather layers","FP_Upsell_Subscription_Global":"With a FlightAware Global subscription, you have access to more data and features for your flights.","FP_Upsell_Expand_Tracking_Coverage":"Expand your tracking coverage with space-based ADS-B and datalink support","FP_Upsell_Save_Unlimited_Aircraft":"Save an unlimited number of aircraft in My FlightAware","FP_Upsell_Discover_Global":"Discover FlightAware Global","FP_Upsell_FA_TV":"Display a high resolution live fleet map with FlightAware TV","FP_Upsell_Unlimited_Flight_Alerts":"Create an unlimited number of flight alerts","FP_Upsell_Check_Out_Premium":"Check out premium account features for aviation professionals and enthusiasts.","FP_Upsell_Five_Months_Data":"Access up to five additional months of historical flight data","FP_Upsell_Predictive_ETAs":"See more accurate Predictive ETAs","FP_Upsell_FA_Premium":"Discover FlightAware Premium","FP_Upsell_Notify_FBO":"Notify your destination FBO","FP_Upsell_Alerts_And_More":"Set Up Unlimited Flight Alerts & More","FP_Upsell_Worldwide_Weather":"Access worldwide weather including turbulence forecasts, lightning, and winds/temperatures aloft","FP_Upsell_Operator_Question":"Are you the operator of this aircraft?","FP_Upsell_Not_An_Operator":"I'm not an operator","FP_Upsell_Silver_Description":"Interested in seeing when your aircraft is powered on and watching it taxi on a live surface map? FlightAware Global is the ultimate aviation toolkit for aircraft owners and operators.","FP_And_More_Bang":"And more!","FP_Global_Features":"Features","FP_Wait_List":"waitlists","FP_Edit_Status_Alert":"Edit status alert settings","FP_Notify_Status_Alerts":"Notify me of all status alerts","FP_Notify_Friend_Status_Alerts":"Notify a friend of all status alerts","FP_Surface_Exclusive":"Available exclusively for select FlightAware paid subscriptions.","FP_Operator_Information":"Operator Information","FP_Airline_Information":"Airline Information","FP_Aircraft_Information":"Aircraft Information","FP_Flight_Data":"Flight Data","FP_Departure":"Departure","FP_Tour_Step_4":"Track inbound plane","FP_Where_Is_My_Plane_Now":"Where is my plane now?","FP_Total_Flight_Time":"Total Flight Time","FP_Upsell_Ready_To_Taxi":"Track on-ground activity and get live surface alerts with Ready to Taxi","FP_Upsell_ETAs_Foresight":"See more accurate ETAs with <a href=\"/commercial/foresight\">FlightAware Foresight</a>"};</script>
+  <script type="text/javascript" src="https://www.flightaware.com/include/4d0085df501e-flightaware.js"   ></script>
+  <script type="text/javascript" src="https://www.flightaware.com/ajax/ignoreall/airlines_js.rvt?locale=en_US&amp;country=US&amp;1"></script>
+
+<script type="text/javascript">
+			var isIE10 = false;
+			/*@cc_on
+			if (/^10/.test(@_jscript_version)) {
+				isIE10 = true;
+			}
+			@*/
+		</script>
+
+<link rel='preconnect' href='https://a.pub.network/' crossorigin />
+<link rel='preconnect' href='https://b.pub.network/' crossorigin />
+<link rel='preconnect' href='https://c.pub.network/' crossorigin />
+<link rel='preconnect' href='https://d.pub.network/' crossorigin />
+<link rel='preconnect' href='https://c.amazon-adsystem.com' crossorigin />
+<link rel='preconnect' href='https://s.amazon-adsystem.com' crossorigin />
+<link rel='preconnect' href='https://secure.quantserve.com/' crossorigin />
+<link rel='preconnect' href='https://rules.quantcount.com/' crossorigin />
+<link rel='preconnect' href='https://pixel.quantserve.com/' crossorigin />
+<link rel='preconnect' href='https://cmp.quantcast.com/' crossorigin />
+<link rel='preconnect' href='https://btloader.com/' crossorigin />
+<link rel='preconnect' href='https://api.btloader.com/' crossorigin />
+<link rel='preconnect' href='https://confiant-integrations.global.ssl.fastly.net' crossorigin />
+
+<script data-no-optimize='1' data-cfasync='false'>
+(function(w, d) {
+    w.adthrive = w.adthrive || {};
+    w.adthrive.cmd = w.adthrive.cmd || [];
+    w.adthrive.plugin = 'adthrive-ads-manual';
+    w.adthrive.host = 'ads.adthrive.com';
+    var s = d.createElement('script');
+    s.async = true;
+    s.referrerpolicy='no-referrer-when-downgrade';
+    s.src = 'https://' + w.adthrive.host + '/sites/6967ae9a9f1b66193c5a6488/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+    var n = d.getElementsByTagName('script')[0];
+    n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+
+
+<script type="text/javascript">
+			var isIE11 = false;
+			var userAgent = navigator.userAgent;
+			var appName = navigator.appName;
+			if (appName == "Microsoft Internet Explorer") {
+				var re = new RegExp("MSIE ([0-9]{1,}[\\.0-9]{0,})");
+				isIE11 = re.exec(userAgent) !== null
+			} else if (appName == "Netscape") {
+				var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\\.0-9]{0,})");
+				isIE11 = re.exec(userAgent) !== null
+			}
+		</script>
+
+<!--[if lt IE 7 ]><script type="text/javascript">var isIE6 = true;</script><![endif]-->
+		<!--[if IE 7 ]><script type="text/javascript">var isIE7 = true;</script><![endif]-->
+		<!--[if IE 8 ]><script type="text/javascript">var isIE8 = true;</script><![endif]-->
+		<!--[if IE 9 ]><script type="text/javascript">var isIE9 = true;</script><![endif]-->
+<!-- done emit -->
+
+  <meta name="twitter:image" content="https://www.flightaware.com/ajax/flight/map/AIC2414/20260625/0010Z/VOBL/VIDP/?width=800&amp;height=418&amp;dpi=2" />
+  <meta name="origin" content="VOBL" />
+  <meta name="twitter:description" content="Track Air India (AI) #2414 flight from Bengaluru Int&#39;l to Indira Gandhi Int&#39;l" />
+  <meta name="destination" content="VIDP" />
+  <meta name="twitter:site" content="@flightaware" />
+  <meta name="description" content="Flight status, tracking, and historical data for Air India 2414 (AI2414/AIC2414) including scheduled, estimated, and actual departure and arrival times." />
+  <meta name="aircrafttype" content="A320" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="title" content="AI2414 (AIC2414) Air India Flight Tracking and History" />
+  <meta name="og:description" content="Flight status, tracking, and historical data for Air India 2414 (AI2414/AIC2414) including scheduled, estimated, and actual departure and arrival times." />
+  <meta name="airline" content="AIC" />
+  <meta name="twitter:domain" content="flightaware.com" />
+  <meta property="og:title" content="AI2414 (AIC2414) Air India Flight Tracking and History - FlightAware"/>
+  <meta property="og:site_name" content="FlightAware"/>
+  <meta property="og:url" content="http://www.flightaware.com/live/flight/AIC2414"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="Track Air India (AI) #2414 flight from Bengaluru Int'l to Indira Gandhi Int'l" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:alt" content="Track Air India (AI) #2414 flight" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="https://www.flightaware.com/ajax/flight/map/AIC2414/20260625/0010Z/VOBL/VIDP/?width=1200&height=630&dpi=2" />
+  <meta property="og:image:type" content="image/png" />
+
+	 <script type="text/javascript">
+		var nTime = 360000;
+		var timePrev = Date.now();
+		var timeoutquant;
+		$(document).ready(function() {
+			restarttimeouthandler();
+
+			var activityHandler = function(delay) {
+				if (delay === undefined) {
+					delay = 60000;
+				}
+				/* Check if we're [delay] seconds from refreshing, if so
+				   delay the page refresh by [delay] seconds. This prevents
+				   the page from refreshing while someone is interacting
+				   with the page. */
+				var timeNow = Date.now();
+				var timeDiff = timeNow - window.timePrev;
+				if (nTime - timeDiff < delay) {
+					window.nTime = delay;
+					restarttimeouthandler();
+					window.timePrev = timeNow;
+				}
+			}
+
+			$(document).keydown(activityHandler);
+			$(document).mousedown(activityHandler);
+		});
+	 </script>
+</head>
+<body class="sticky-footer-ad">
+<nav id="mobileNavBar" class="navBarMobile" role="navigation" aria-label="Main navigation">
+	<i class="icon-close"></i>
+	<a href="/"><img class="flightaware-logo" src="https://www.flightaware.com/images/nav/flightaware-logo-color.png"/></a>
+
+<ul id="listMenuRootMobile" role="menubar">
+			<li class="menu_item" role="menuitem" aria-haspopup="true">
+				<a  class="menu-item-link">
+			<span class="menu-item-title">Products</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+								<div class="menu-group">
+									<p class="menu-group-title">Data Products</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/aeroapi/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-aeroapi.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">AeroAPI</span>
+				<span class="menu-item-description">Flight data API with on-demand flight status and flight tracking data.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/firehose/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-firehose.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware Firehose</span>
+				<span class="menu-item-description">Streaming flight data feed for enterprise integrations with real-time, historical and predictive flight data.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/foresight/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-foresight.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware Foresight</span>
+				<span class="menu-item-description">Predictive technology to strengthen customer trust in your operations</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/reports/rapid/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-rapid-reports.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">Rapid Reports</span>
+				<span class="menu-item-description">Quickly purchase historical reports delivered via email.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/reports/custom/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-custom-reports.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">Custom Reports</span>
+				<span class="menu-item-description">Consultative detailed and customized flight tracking data reports.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/integrated-maps/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-integrated-mapping.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">Integrated Mapping Solutions</span>
+				<span class="menu-item-description">Incorporate FlightAware maps in your web and mobile applications</span>
+			</div>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+								<div class="menu-group">
+									<p class="menu-group-title">Applications</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/aviator/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-aviator.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware Aviator</span>
+				<span class="menu-item-description">The ultimate flight tracking suite for small aircraft/general aviation (GA) owners and operators.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/premium/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-premium-subscription.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">Premium Subscriptions</span>
+				<span class="menu-item-description">A personalized flight-following experience with unlimited alerts and more.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/global/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-flightaware-global.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware Global</span>
+				<span class="menu-item-description">The industry standard flight tracking platform for business aviation (BA) owners and operators.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/fbo-toolbox/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-fbo-toolbox.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware FBO Toolbox</span>
+				<span class="menu-item-description">Comprehensive flight tracking to enhance your FBO operations and increase sales.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/tv/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-flightaware-tv.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">FlightAware TV</span>
+				<span class="menu-item-description">Full-screen FlightAware TV maps for operators or FBOs.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/commercial/globalbeacon/" class="menu-item-link">
+			<div class="menu-item-icon"><img src="https://www.flightaware.com/images/nav/icon-globalbeacon.png" /></div>
+			<div class="menu-item-text">
+				<span class="menu-item-title">GlobalBeacon</span>
+				<span class="menu-item-description">GADSS-compliant global tracking and alerting for airlines and aircraft operators.</span>
+			</div>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+
+					</div>
+			</li>
+			<li class="menu_item" role="menuitem" aria-haspopup="true">
+				<a  class="menu-item-link">
+			<span class="menu-item-title">Industries</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/airports" class="menu-item-link">
+			<span class="menu-item-title">Airports</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/airlines" class="menu-item-link">
+			<span class="menu-item-title">Airlines</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/business" class="menu-item-link">
+			<span class="menu-item-title">Business</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/government" class="menu-item-link">
+			<span class="menu-item-title">Government</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/manufacturer" class="menu-item-link">
+			<span class="menu-item-title">Manufacturer</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://www.flightaware.com/industry/travel" class="menu-item-link">
+			<span class="menu-item-title">Travel</span>
+	</a>
+
+
+
+		</li>
+	</ul>
+					</div>
+			</li>
+			<li class="menu_item" role="menuitem" aria-haspopup="true">
+				<a href="/adsb/" class="menu-item-link">
+			<span class="menu-item-title">ADS-B</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/adsb/stats/" class="menu-item-link">
+			<span class="menu-item-title">Statistics</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://go.flightaware.com/skyawareanywhere" class="menu-item-link">
+			<span class="menu-item-title">SkyAware Anywhere</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/adsb/coverage/" class="menu-item-link">
+			<span class="menu-item-title">Coverage Map</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://flightaware.store/" class="menu-item-link">
+			<span class="menu-item-title">ADS-B Store</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/adsb/piaware/build/" class="menu-item-link">
+			<span class="menu-item-title">Build a PiAware ADS-B Receiver</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/adsb/flightfeeder/" class="menu-item-link">
+			<span class="menu-item-title">FlightFeeder</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/adsb/faq/" class="menu-item-link">
+			<span class="menu-item-title">FAQs</span>
+	</a>
+
+
+
+		</li>
+	</ul>
+					</div>
+			</li>
+			<li class="menu_item app_links_menu" role="menuitem" aria-haspopup="true">
+				<a href="/live" class="menu-item-link">
+			<span class="menu-item-title">Flight Tracking</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+								<div class="menu-group">
+									<p class="menu-group-title">Delays and cancellations</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/cancelled/" class="menu-item-link">
+			<span class="menu-item-title">Cancellations</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/airport/delays/" class="menu-item-link">
+			<span class="menu-item-title">Airport Delays</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/miserymap/" class="menu-item-link">
+			<span class="menu-item-title">MiseryMap</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+								<div class="menu-group">
+									<p class="menu-group-title">Search flights</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/findflight/" class="menu-item-link">
+			<span class="menu-item-title">Flight Finder</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/fleet/" class="menu-item-link">
+			<span class="menu-item-title">Browse by Operator</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/resources/airport/browse/" class="menu-item-link">
+			<span class="menu-item-title">Browse by Airport</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/aircrafttype/" class="menu-item-link">
+			<span class="menu-item-title">Browse by Aircraft Type</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+								<div class="menu-group">
+									<p class="menu-group-title">Other</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/airport/random" class="menu-item-link">
+			<span class="menu-item-title">Random Airport</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/live/flight/random" class="menu-item-link">
+			<span class="menu-item-title">Random Flight</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/statistics/ifr-route/" class="menu-item-link">
+			<span class="menu-item-title">IFR Route Analyzer</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+
+					</div>
+			</li>
+			<li class="menu_item" role="menuitem" aria-haspopup="true">
+				<a  class="menu-item-link">
+			<span class="menu-item-title">Community</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+								<div class="menu-group">
+									<p class="menu-group-title">Photos</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/" class="menu-item-link">
+			<span class="menu-item-title">Popular Photos</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/all/sort/date" class="menu-item-link">
+			<span class="menu-item-title">Newest Photos</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/all/sort/votes" class="menu-item-link">
+			<span class="menu-item-title">Highest Ranked</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/staffpicks" class="menu-item-link">
+			<span class="menu-item-title">Staff Picks</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/recentcomments.rvt?page=1" class="menu-item-link">
+			<span class="menu-item-title">Recent Comments</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/crowdsource" class="menu-item-link">
+			<span class="menu-item-title">Community Tagging</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/photos/upload" class="menu-item-link">
+			<span class="menu-item-title">Upload Your Photos</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+								<div class="menu-group">
+									<p class="menu-group-title">Squawks</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/squawks/browse/general/recently/popular" class="menu-item-link">
+			<span class="menu-item-title">Current Squawks</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/squawks/browse/general/24_hours/new" class="menu-item-link">
+			<span class="menu-item-title">New Squawks</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="/squawks/" class="menu-item-link">
+			<span class="menu-item-title">Popular Squawks</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+								<div class="menu-group">
+									<p class="menu-group-title">Discussions</p>
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+													<a href="https://discussions.flightaware.com/" class="menu-item-link">
+			<span class="menu-item-title">All Discussions</span>
+	</a>
+
+
+
+		</li>
+	</ul>								</div>
+
+					</div>
+			</li>
+			<li class="menu_item" role="menuitem" aria-haspopup="true">
+				<a href="/about" class="menu-item-link">
+			<span class="menu-item-title">Company</span>
+	</a>
+
+		<div class="submenu-trigger">
+			<i aria-hidden="true"></i>
+		</div>
+
+					<div class="submenu" aria-hidden="true">
+<ul role="menu">
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/" class="menu-item-link">
+			<span class="menu-item-title">About</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/careers/" class="menu-item-link">
+			<span class="menu-item-title">Careers</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/datasources/" class="menu-item-link">
+			<span class="menu-item-title">Data Sources</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/history.rvt" class="menu-item-link">
+			<span class="menu-item-title">History</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://blog.flightaware.com" class="menu-item-link">
+			<span class="menu-item-title">Blog</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://flightaware.engineering/" class="menu-item-link">
+			<span class="menu-item-title">Engineering Blog</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/news/" class="menu-item-link">
+			<span class="menu-item-title">Newsroom</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="https://go.flightaware.com/webinars" class="menu-item-link">
+			<span class="menu-item-title">Webinars</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/commercial/advertising/" class="menu-item-link">
+			<span class="menu-item-title">Advertise With Us</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/faq/" class="menu-item-link">
+			<span class="menu-item-title">FAQs</span>
+	</a>
+
+
+
+		</li>
+		<li class="submenu_item" role="menuitem" aria-haspopup="true">
+											<a href="/about/contact/" class="menu-item-link">
+			<span class="menu-item-title">Contact Us</span>
+	</a>
+
+
+
+		</li>
+	</ul>
+					</div>
+			</li>
+</ul>
+
+		<div class="user-account">
+		<div id="signUpButtonMobile"><a href="/account/join/">Create a FlightAware Account</a></div>
+		<a href="/account/login/">or log in to an existing account</a>
+	</div>
+
+	<div class="app-download">
+		<div>Get the FlightAware App for the best flight tracking experience on your device.</div>
+		<div class="app-links">
+			<a href="https://apps.apple.com/us/app/live-flight-tracker/id316793974" target="_blank">
+				<img src="https://www.flightaware.com/images/app-store-badge.svg" alt="iOS App">
+			</a>
+			<a href="https://play.google.com/store/apps/details?id=com.flightaware.android.liveFlightTracker"
+				target="_blank">
+				<img src="https://www.flightaware.com/images/google-play-badge.png" alt="Google Play App">
+			</a>
+		</div>
+	</div>
+</nav><div id="mainBody"><header role="banner" id="topWrapper"><div class="topMenuBarWrapper accountHighlight"><nav class="topMenuBar"><div class="topMenuList"><div class="sp_menu_item"><a href="https://login.flightaware.com/signup"><i class="fa fa-plane"></i> Join FlightAware</a></div><div class="sp_menu_item"><a href="https://login.flightaware.com/signin"><i class="fa fa-plane"></i> Login</a></div><div aria-label="Clock Container" id="headerClock" class="sp_menu_item fadate-clock noHover"><span title="EDT">10:01AM EDT</span>
+</div><div class="sp_menu_item noHover " id="LocaleTopBoxItem"><div id="LocaleTopBox"><form  action="https://www.flightaware.com/account/locale_switch.rvt" method="get" style="display: inline;">
+ <select name="locale"  aria-label="Locale Picker" class="localePicker" onchange="this.form.submit();">
+  <option value="ar_SA">العربية</option>
+  <option value="cs_CZ">Čeština</option>
+  <option value="de_DE">Deutsch</option>
+  <option value="en_AU">English (Australia)</option>
+  <option value="en_CA">English (Canada)</option>
+  <option value="en_GB">English (UK)</option>
+  <option value="en_US" selected="selected">English (USA)</option>
+  <option value="es_ES">Español (España)</option>
+  <option value="es_MX">Español</option>
+  <option value="fi_FI">Suomi</option>
+  <option value="fr_CA">Français (Canada)</option>
+  <option value="fr_FR">Français (France)</option>
+  <option value="he_IL">עִבְרִית</option>
+  <option value="hi_IN">हिन्दी</option>
+  <option value="hr_HR">Hrvatski</option>
+  <option value="it_IT">Italiano</option>
+  <option value="ja_JP">日本語</option>
+  <option value="ko_KR">한국어</option>
+  <option value="pl_PL">Polski</option>
+  <option value="pt_BR">Português (Brasil)</option>
+  <option value="pt_PT">Português (Portugal)</option>
+  <option value="ru_RU">Русский</option>
+  <option value="tr_TR">Türkçe</option>
+  <option value="zh_CN">中文(简体)</option>
+  <option value="zh_HK">中文(香港)</option>
+  <option value="zh_TW">中文(台灣)</option>
+ </select>
+ <input type="hidden" name="csrf_token" value="097414296" />
+</form>
+<a href="https://www.flightaware.com/account/locale_switch.rvt?csrf_token=097414296&locale=en_US"><img height="11" width="16" src="https://www.flightaware.com/images/countries/US.png" alt="US Flag" title="Switch to US FlightAware" /></a>&nbsp;</div></div></div></nav></div><div id="topContent"><div class="menuIcon"><i class="fa fa-bars"></i></div><div class="logoLeft float_left"><a href="/"><img src="https://www.flightaware.com/images/nav/flightaware-logo.png" alt="FlightAware" class="faLogo " /></a></div><div id="headerSearchForm" class="headerTrack"><div class="flightSearchForm"><div class="searchToggle text_align_right" > <div class="search_in"><span class="search_in_content">All</span><select aria-label="Search Method" class="trackSelect"><option value="omniSearch">All</option><option value="routeSearch">Route</option><option value="airlineSearch">Airline flight</option><option value="privateSearch">Private flight (tail #)</option><option value="airportSearch">Airport</option></select></div></div><div id="omniSearch" data-fa-search-type="omniSearch" class="searchOption active"><div class="fa_omnisearch_container"><form id="omnisearch_form" method="get" action="//www.flightaware.com/ajax/ignoreall/omnisearch/disambiguation.rvt"><input type="hidden" name="searchterm" value=""><input type="hidden" name="token" value="">

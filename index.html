@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>VistaraFinder - Find ex-Vistara Cabin Layouts & Lie-Flat Beds on Air India Flights</title>
+  <meta name="description" content="Find out if your upcoming Air India flight is operated by an ex-Air Vistara airplane featuring premium cabins, lie-flat seats, and seatback entertainment.">
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="logo-orb">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="header-plane-svg">
+            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L14 19v-5.5l7 2.5z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>ex-Vistara <span class="gold-text">Finder</span></h1>
+          <p>Air India Fleet Cabin Guide</p>
+        </div>
+      </div>
+      <div class="fleet-count">
+        <span class="count-num">70</span>
+        <span class="count-lbl">Planes Tracked</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    
+    <!-- Navigation Tabs -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-target="panel-route">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Route Guide</span>
+      </button>
+      <button class="tab-btn" data-target="panel-flight">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        <span>Flight # Lookup</span>
+      </button>
+      <button class="tab-btn" data-target="panel-tail">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="tab-icon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        <span>Tail Registry</span>
+      </button>
+    </div>
+
+    <!-- Search Panels Section -->
+    <section class="search-section card">
+      
+      <!-- Panel 1: Route Search -->
+      <div class="search-panel active" id="panel-route">
+        
+        <!-- Trip Type Selector (One-way, Round-trip, Multi-city) -->
+        <div class="trip-type-nav">
+          <button class="trip-type-btn active" data-type="oneway">One-way</button>
+          <button class="trip-type-btn" data-type="roundtrip">Round trip</button>
+          <button class="trip-type-btn" data-type="multicity">Multi-city</button>
+        </div>
+
+        <form class="search-form" onsubmit="return false;">
+          
+
+          <!-- Standard inputs (One-way & Round trip) -->
+          <div id="standard-route-inputs">
+            <div class="route-select-wrapper">
+              <div class="form-group">
+                <label for="search-from">Origin</label>
+                <select id="search-from" class="form-control city-select"></select>
+              </div>
+              
+              <button id="btn-swap-cities" class="btn-swap" aria-label="Swap Cities">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="swap-icon">
+                  <path d="M17 11l4-4-4-4M21 7H9M7 13l-4 4 4 4M3 17h12"/>
+                </svg>
+              </button>
+              
+              <div class="form-group">
+                <label for="search-to">Destination</label>
+                <select id="search-to" class="form-control city-select"></select>
+              </div>
+            </div>
+            
+            <div class="dates-row">
+              <div class="form-group flex-1">
+                <label for="search-date">Departure Date</label>
+                <input type="date" id="search-date" class="form-control">
+              </div>
+              
+              <div class="form-group flex-1" id="return-date-group" style="display: none;">
+                <label for="search-return-date">Return Date</label>
+                <input type="date" id="search-return-date" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <!-- Multi-city Inputs wrapper -->
+          <div id="multicity-segments-wrapper" style="display: none;">
+            <div id="multicity-segments" class="multicity-rows-container">
+              <!-- Dynamically populated rows -->
+            </div>
+            <button type="button" id="btn-add-segment" class="btn-add-row">+ Add Flight Segment</button>
+          </div>
+          
+          <button id="btn-route-search" class="btn btn-primary">Search Flights</button>
+        </form>
+      </div>
+
+      <!-- Panel 2: Flight Number Search -->
+      <div class="search-panel" id="panel-flight">
+        <form class="search-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="search-flight-no">Air India Flight Number</label>
+            <input type="text" id="search-flight-no" class="form-control" placeholder="e.g. AI 2955 or 2810" autocomplete="off">
+            <p class="input-tip">Tip: Transferred ex-Vistara flights carry flight numbers starting with a 2 (e.g., AI 2xxx).</p>
+          </div>
+          <button id="btn-flight-search" class="btn btn-primary">Check Cabin Specifications</button>
+        </form>
+      </div>
+
+      <!-- Panel 3: Tail Number Search -->
+      <div class="search-panel" id="panel-tail">
+        <form class="search-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="search-tail-no">Aircraft Registration (Tail Number)</label>
+            <input type="text" id="search-tail-no" class="form-control" placeholder="e.g. VT-TSD or VT-TVA" autocomplete="off">
+            <p class="input-tip">Search for standard registrations or ex-Vistara (e.g., VT-TNB, VT-TSN).</p>
+          </div>
+          <button id="btn-tail-search" class="btn btn-primary">Look Up Aircraft Seat Map</button>
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Results Banner -->
+    <div id="results-summary" class="results-summary-strip hidden">
+      <span id="results-count">0 routes analyzed</span>
+      <span class="results-hint">Google Flights live search will open in a new tab</span>
+    </div>
+
+    <!-- Results Area -->
+    <section id="results-container" class="results-wrapper">
+      <!-- Route guide cards and Google Flights button injected by JavaScript -->
+    </section>
+
+    <!-- Fleet Registry Explorer -->
+    <section class="fleet-explorer card">
+      <h2>Vistara Fleet Registry Directory</h2>
+      <p class="explorer-subtitle">Browse and select any of the 70 transferred aircraft to view their full specifications.</p>
+      
+      <div class="explorer-accordion">
+        <div class="explorer-group">
+          <h3>Boeing 787-9 Dreamliners (7 widebodies)</h3>
+          <div class="fleet-list" id="fleet-787"></div>
+        </div>
+        
+        <div class="explorer-group">
+          <h3>Airbus A321neo Jets (10 narrowbodies with Lie-Flats)</h3>
+          <div class="fleet-list" id="fleet-a321"></div>
+        </div>
+        
+        <div class="explorer-group">
+          <h3>Airbus A320neo Jets (53 narrowbodies)</h3>
+          <div class="fleet-list" id="fleet-a320"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="guide-section card">
+      <h2>Understanding the Vistara Merger</h2>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <div class="guide-num">01</div>
+          <h3>The Flight Number Code</h3>
+          <p>Air India tags all flights operated by former Vistara aircraft with flight numbers starting with <strong>"2"</strong> (e.g., AI 2955, AI 2810). Standard Air India flights use 3-digit or standard 8xx/4xx series numbers.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-num">02</div>
+          <h3>Narrowbody Lie-Flat Beds</h3>
+          <p>Ex-Vistara Airbus A321neo aircraft feature <strong>12 fully lie-flat business class seats</strong> in a 2-2 configuration. Standard narrowbodies in India (including standard Air India) only feature standard recliners.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-num">03</div>
+          <h3>Premium Economy Cabin</h3>
+          <p>Vistara was the pioneer of Premium Economy in India. Transferred aircraft offer a dedicated Premium Economy cabin with 33-38" pitch, leg rests, and premium meals, which standard Air India is only beginning to roll out.</p>
+        </div>
+        <div class="guide-card">
+          <div class="guide-num">04</div>
+          <h3>Seatback Entertainment</h3>
+          <p>All ex-Vistara A321neo and Boeing 787-9 aircraft have functioning personal seatback entertainment screens. In contrast, standard Air India older narrowbodies do not feature seatback entertainment screens.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>ex-Vistara Finder is an independent cabin layout guide for Air India passengers.</p>
+    <p>© 2026 Fleet Registry Portal. Powered by Antigravity Pairing Systems.</p>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
